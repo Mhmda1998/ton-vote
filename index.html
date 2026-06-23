@@ -32,10 +32,16 @@
         .info { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin: 25px 0; }
         .info-item { background: rgba(255,255,255,0.08); padding: 12px 20px; border-radius: 12px; font-size: 0.9em; }
         .info-item strong { color: #00d4ff; display: block; margin-bottom: 4px; }
-        .btn { display: inline-block; padding: 14px 32px; background: linear-gradient(90deg, #00d4ff, #ff00ff); color: #fff; text-decoration: none; border-radius: 12px; font-weight: bold; margin: 8px; transition: transform 0.2s; }
+        .buttons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+        .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 24px; color: #fff; text-decoration: none; border-radius: 12px; font-weight: bold; font-size: 0.95em; transition: transform 0.2s; }
         .btn:hover { transform: scale(1.05); }
-        .btn-secondary { background: linear-gradient(90deg, #4b0082, #9400d3); }
+        .btn-tg { background: linear-gradient(90deg, #0088cc, #00aaff); }
+        .btn-dao { background: linear-gradient(90deg, #00d4ff, #ff00ff); }
+        .btn-github { background: linear-gradient(90deg, #4b0082, #9400d3); }
+        .btn-ton { background: linear-gradient(90deg, #0098ea, #00d4ff); }
         .contract { font-family: 'Courier New', monospace; background: rgba(0,0,0,0.4); padding: 8px 12px; border-radius: 6px; font-size: 0.75em; word-break: break-all; margin-top: 8px; }
+        .section { margin-top: 30px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .telegram-icons { font-size: 1.2em; }
     </style>
 </head>
 <body>
@@ -52,10 +58,18 @@
         </div>
         <p><strong>Jetton Master Contract:</strong></p>
         <div class="contract">EQCFj0pIex3sHfC-sNAgTkVDkykjqkg5k_Q0W4SYrABIbFyK</div>
-        <div style="margin-top: 30px;">
-            <a href="https://tonviewer.com/UQCxl11ULxxz9X-nvXoNOEgIosMCtHTHcmL032Tylt0u_QMe" class="btn-secondary" style="display:inline-block; padding:14px 32px; color:#fff; text-decoration:none; border-radius:12px; font-weight:bold; margin:8px; background:linear-gradient(90deg,#00d4ff,#ff00ff);">View Owner Wallet</a>
-            <a href="https://ton.vote/" class="btn">Join the DAO</a>
-            <a href="https://github.com/Mhmda1998/ton-vote" class="btn-secondary">View on GitHub</a>
+        
+        <div class="section">
+            <p><strong>Join Our Community:</strong></p>
+            <div class="buttons">
+                <a href="https://t.me/HOK_GOLD_OFFICIAL" class="btn btn-tg"><span class="telegram-icons">📢</span> Official Channel</a>
+                <a href="https://t.me/HOK_GOLD_CHAT" class="btn btn-tg"><span class="telegram-icons">💬</span> Community Chat</a>
+            </div>
+            <div class="buttons">
+                <a href="https://ton.vote/" class="btn btn-dao">🗳️ Join DAO</a>
+                <a href="https://tonviewer.com/UQCxl11ULxxz9X-nvXoNOEgIosMCtHTHcmL032Tylt0u_QMe" class="btn btn-ton">💎 Owner Wallet</a>
+                <a href="https://github.com/Mhmda1998/ton-vote" class="btn btn-github">💻 GitHub</a>
+            </div>
         </div>
     </div>
 </body>
